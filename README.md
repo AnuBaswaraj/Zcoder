@@ -82,7 +82,7 @@ We welcome contributions from the community! To contribute to Zcoder, please fol
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, feel free to contact us at tarun060803@gmail.com.
+If you have any questions, suggestions, or feedback, feel free to contact us at banushka1591@gmail.com.
 
 Thank you for using Zcoder! Happy coding!
 
