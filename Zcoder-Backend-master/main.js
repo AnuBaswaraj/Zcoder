@@ -9,7 +9,7 @@ const bcrypt = require('bcryptjs');
 const server = http.createServer(main);
 const io = socketIo(server, {
   cors: {
-    origin: 'https://zcoderstage.vercel.app',
+    origin: /https:\/\/zcoder.*\.vercel\.app/,
     methods: ['GET', 'POST']
   }
 });
