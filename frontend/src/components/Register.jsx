@@ -28,11 +28,17 @@ const Register = () => {
     formData.append('password', credentials.password);
     formData.append('city', credentials.city);
     formData.append('college', credentials.college);
-    formData.append('profile_image', credentials.profile_image);
+    formData.append('profile_image', credentials.profile_image, credentials.profile_image.name);
+      console.log(formData.get('profile_image'));
+
     formData.append('userhandle', credentials.userhandle);
     console.log(credentials);
-
+ 
     try {
+         if (!credentials.profile_image) {
+    toast.error("Please upload a profile image");
+    return;
+  }
      const response = await fetch(`${baseUrl}/register`, {
         method: "POST",
         body: formData
@@ -79,7 +85,7 @@ const Register = () => {
 
                 <div className="w-full mb-4 mt-6">
                   <label htmlFor="profile_image" className="mb-2 dark:text-gray-300">Profile Image</label>
-                  <input type="file" name="profile_image" className="mt-2 p-4 w-full border-2 rounded-lg dark:text-gray-200 dark:border-gray-600 dark:bg-gray-800" onChange={onChange} />
+                  <input type="file" name="profile_image"  accept="image/*" className="mt-2 p-4 w-full border-2 rounded-lg dark:text-gray-200 dark:border-gray-600 dark:bg-gray-800" onChange={onChange} />
                 </div>
 
                 <div className="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col gap-2 justify-center w-full">
