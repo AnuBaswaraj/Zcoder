@@ -33,7 +33,7 @@ const Register = () => {
     console.log(credentials);
 
     try {
-      const response = await fetch(`${baseUrl}/api/auth/register`, {
+     const response = await fetch(`${baseUrl}/register`, {
         method: "POST",
         body: formData
       });
