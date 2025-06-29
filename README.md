@@ -85,7 +85,3 @@ We welcome contributions from the community! To contribute to Zcoder, please fol
 If you have any questions, suggestions, or feedback, feel free to contact us at banushka1591@gmail.com.
 
 Thank you for using Zcoder! Happy coding!
-
----
-
-Feel free to customize this README further based on your project's specifics and additional information you may want to include.
